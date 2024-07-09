@@ -1,0 +1,58 @@
+@import url(./header.css);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: var(--color-dark);
+  overflow-x: hidden;
+}
+
+/* ЧТО ЭТО ТАКОЕ ??? */
+
+:root {
+  --color-dark: #212121;
+  --color-darkgrey: #707070;
+  --color-btn-blue: #00798a;
+  --color-light-blue-bg: #97cad114;
+  --transition-duration: 0.2s;
+  --color-white: white;
+  --border-radius: 5px;
+}
+/* ЧТО ЭТО ТАКОЕ ??? */
+
+.container {
+  width: 1181px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: var(--color-btn-blue);
+  color: var(--color-white);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: #16a5b8;
+}
+
+/* ЧТО ЭТО ТАКОЕ ??? */
+a,
+button,
+svg,
+img,
+input * {
+  transition-duration: var(--transition-duration);
+}
+/* ЧТО ЭТО ТАКОЕ ??? */

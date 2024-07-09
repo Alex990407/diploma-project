@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  column-gap: 20px;
+}
+.header-logo {
+  width: 118px;
+  height: auto;
+  margin-right: 30px;
+}
+.head-input input {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+}
