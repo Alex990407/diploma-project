@@ -1,0 +1,9 @@
+@mixin widthHaight($width, $haight) {
+  width: $width;
+  height: $haight;
+}
+
+@mixin borderPadding($border, $padding) {
+  border: $border;
+  padding: $padding;
+}
