@@ -88,11 +88,11 @@ a:hover {
   text-decoration: underline;
 }
 
-.search__input__left,
-.search__input__right {
-  // @include widthHaight(300px, 42px);
-  // @include borderPadding(, 5px 10px);
-}
+// .search__input__left,
+// .search__input__right {
+//   @include widthHaight(300px, 42px);
+//   @include borderPadding(, 5px 10px);
+// }
 
 .search__input__left {
   border: 1px solid #ccc;
