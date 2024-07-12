@@ -3,7 +3,19 @@
   height: $haight;
 }
 
-@mixin borderPadding($border, $padding) {
-  border: $border;
+@mixin marginPadding($margin, $padding) {
+  margin: $margin;
   padding: $padding;
+}
+
+@mixin displayFlex(
+  $display: flex,
+  $flexdirection: row,
+  $justify: start,
+  $align: start
+) {
+  display: $display;
+  flex-direction: $flexdirection;
+  justify-content: $justify;
+  align-items: $align;
 }

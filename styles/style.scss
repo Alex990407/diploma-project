@@ -1,12 +1,27 @@
 @import "./abstracts/mixin";
+@import "./abstracts/variable";
 
 html {
+  display: flex;
   box-sizing: border-box;
+  @include widthHaight(100%, 100%);
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  // @include widthHaight(1512px, 100vh);
+  max-width: 1520px;
+  height: 100vh;
 }
 
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  list-style-type: none;
+  outline: none;
+  text-decoration-line: none;
 }
 
 header {
@@ -48,20 +63,49 @@ header {
   justify-content: center;
 }
 
+.rightside-head {
+  display: flex;
+  column-gap: 20px;
+}
+
+.links-right {
+  display: flex;
+  column-gap: 20px;
+}
+
+.rightside-head a {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+a:hover {
+  color: #707070;
+  text-decoration: underline;
+}
+
 .search__input__left,
 .search__input__right {
-  @include widthHaight(300px, 42px);
-  @include borderPadding(1px solid #ccc, 5px 10px);
+  // @include widthHaight(300px, 42px);
+  // @include borderPadding(, 5px 10px);
 }
 
 .search__input__left {
+  border: 1px solid #ccc;
   border-radius: 8px 0px 0px 8px;
-  border: 1px 0px 0px 0px;
-  color: #333;
+  @include widthHaight(300px, 42px);
+  // border: 1px 0px 0px 0px;
+  // color: #333;
 }
 
 .search__input__right {
+  border: 1px solid #ccc;
   border: 1px 0px 0px 0px;
+  @include widthHaight(255px, 42px);
 }
 
 .search__input__left::-moz-placeholder {
@@ -97,7 +141,7 @@ header {
 }
 
 .search__svg {
-  @include widthHaight(42px, 42px);
+  @include widthHaight(44px, 44px);
 
   background-color: #f65858;
   background-repeat: no-repeat;
@@ -111,9 +155,17 @@ header {
   width: 83px;
   height: 36px;
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 16px;
   background-color: rgba(0, 121, 138, 1);
   color: rgba(255, 255, 255, 1);
   margin-right: 15px;
+}
+
+.btn__header:hover {
+  background-color: #16a5b8;
 }
 
 @media (max-width: 1400px) {
@@ -188,3 +240,87 @@ header {
     width: 90%;
   }
 }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.firstMainCont {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1510px;
+  height: 560px;
+  background-color: rgba(33, 33, 33, 1);
+  padding-left: 10%;
+  padding-right: 10%;
+  // убрать
+}
+
+.headerFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 2px solid rgba(246, 247, 248, 0.7);
+  padding: 16px 0;
+  margin-bottom: 12px;
+  gap: 16px;
+}
+
+.headerFooter h3 {
+  color: $primary-font-color-footer;
+}
+
+.headerFooter a,
+.socialMediaLinkApp a img {
+  border-radius: $primary-border-radius;
+  border: $primary-border;
+}
+
+.footerLink {
+  align-content: center;
+  text-align: center;
+  @include widthHaight(120px, 44px);
+  color: $primary-font-color-footer;
+  border: 1px solid white;
+  border-radius: $primary-border-radius;
+
+  // спросить у Астемира, как убрать opacity при наведении на кнопку.
+  &:hover {
+    transition: opacity 1;
+
+    text-decoration-line: none;
+  }
+  // спросить у Астемира, как убрать opacity при наведении на кнопку.
+}
+
+.navAllFooter {
+  @include displayFlex(flex, row, space-between, start);
+}
+
+footer div ul h3,
+.socialFooter h3 {
+  color: $primary-font-color-footer;
+}
+
+footer div ul li a {
+  color: $primary-font-color-footer;
+  opacity: 0.7;
+}
+
+.socialMediaAll {
+  @include displayFlex(flex, row, space-between, center);
+}
+
+// .socialFooter,
+// .socialMediaAll {
+//   color: $primary-font-color-footer;
+//   opacity: 0.7;
+// }
