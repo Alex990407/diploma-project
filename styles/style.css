@@ -220,6 +220,7 @@ a:hover {
 }
 main {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
@@ -227,6 +228,113 @@ main {
 
 .firstMainCont {
   display: flex;
+  margin-top: 70px;
+  max-width: 1196px;
+  margin-bottom: 30px;
+}
+
+main div div p {
+  margin: 10px 0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.firstMainContBtn {
+  width: 125px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(0, 121, 138);
+  color: rgb(255, 255, 255);
+}
+
+.firstLeft {
+  width: 600px;
+}
+
+.firstRight {
+  width: 380px;
+  height: 270px;
+  margin-bottom: 10px;
+}
+
+.eventsNear {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 2px solid rgb(110, 172, 230);
+}
+
+.headEventsNear {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1196px;
+}
+
+.headEventsNearLeft {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.mountainView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  height: 44px;
+  background-color: rgba(151, 202, 209, 0.12);
+  color: rgb(0, 121, 138);
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.headEventsNearRight p {
+  color: rgb(0, 121, 138);
+  cursor: pointer;
+}
+
+.allEventsNear {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1196px;
+  margin-top: 15px;
+}
+
+.eventsBoxItem {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  max-height: 400px;
+  margin: 10px;
+}
+
+.infoItems li {
+  color: rgb(112, 112, 112);
+  margin: 10px 0;
+}
+
+.infoItems li h4 {
+  color: rgb(33, 33, 33);
+}
+
+.headerOnlineEvents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerOnlineEvents p {
+  color: rgb(0, 121, 138);
+  cursor: pointer;
+}
+
+.allOnlineEvents {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1196px;
 }
 
 footer {
