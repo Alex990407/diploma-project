@@ -420,6 +420,27 @@ main div div p {
   padding: 20px;
 }
 
+.popularCities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// .popularCities h5 p div {
+//   margin-bottom: 20px;
+// }
+
+.popularCitiesImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popularCitiesImgItem {
+  margin: 10px 10px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
