@@ -28,6 +28,8 @@ header {
   margin: 15px;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  max-width: 1512px;
+  max-height: 64px;
 }
 
 .header-logo {
@@ -40,6 +42,7 @@ header {
   margin: 0;
   display: inline-flex;
   align-items: center;
+  padding: 10px;
 }
 
 .header-logo-small {
@@ -222,6 +225,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 1196px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -260,8 +264,7 @@ main div div p {
 .eventsNear {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  border: 2px solid rgb(110, 172, 230);
+  margin-bottom: 30px;
 }
 
 .headEventsNear {
@@ -298,7 +301,9 @@ main div div p {
 
 .allEventsNear {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
+  box-sizing: border-box;
   max-width: 1196px;
   margin-top: 15px;
 }
@@ -306,9 +311,14 @@ main div div p {
 .eventsBoxItem {
   display: flex;
   flex-direction: column;
-  max-width: 270px;
+  max-width: 250px;
   max-height: 400px;
   margin: 10px;
+}
+
+.eventsBoxItem .eventsBoxItemImg {
+  max-width: 250px;
+  height: 150px;
 }
 
 .infoItems li {
@@ -335,6 +345,55 @@ main div div p {
   display: flex;
   flex-wrap: wrap;
   max-width: 1196px;
+}
+
+.joinMeetup {
+  display: flex;
+  max-width: 1192px;
+  max-height: 236px;
+  background-color: rgba(151, 202, 209, 0.08);
+  border-radius: 8px;
+  padding: 4%;
+  margin-bottom: 20px;
+}
+
+.joinMeetupLeft {
+  max-width: 740px;
+  max-height: 165px;
+}
+
+.joinMeetupLeft button {
+  width: 192px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(227, 35, 89);
+  color: rgb(255, 255, 255);
+}
+
+.joinMeetupRight {
+  max-width: 341px;
+  max-height: 196px;
+}
+
+.topCategories {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+
+.topCategories div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 135px;
+  height: 112px;
+  background-color: rgba(151, 202, 209, 0.08);
+  color: rgb(33, 33, 33);
+  border-radius: 8px;
+  margin: 5px;
+  padding: 20px;
 }
 
 footer {
